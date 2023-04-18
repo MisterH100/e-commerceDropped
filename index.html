@@ -20,14 +20,14 @@
   <div class="nav__box"><input type="text" placeholder="Search" class="nav__search"</input>
   <i class="fa-solid fa-magnifying-glass"></i></div>
 
-  <ul class="nav__list">
-    <li class="nav__item">Your Cart</li>
-    <li class="nav__item">Your Account</li>
+  <ul class="nav__list" id="navList">
+    <li class="nav__item" id="navItem1">Your Cart</li>
+    <li class="nav__item" id="navItem2">Your Account</li>
   </ul>
-  <span class="nav__icon"><i class="fa-solid fa-bars"></i></span>
+  <span class="nav__icon" id="navIcon" onclick = "sideBarActive()"; ><i id="navIconBars"class="fa-solid fa-bars"></i></span>
  </div>
 
- <div class="sidebar">
+ <div class="sidebar" id="sideBar">
 
  </div>
 
@@ -42,5 +42,6 @@
 <!--------------------FOOTER---------------------------->
 
 <!------------------------------------------------------>
+<script src="js/script.js"></script>
 </body>
 </html>

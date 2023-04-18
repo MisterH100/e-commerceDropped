@@ -63,6 +63,8 @@
 }
 
 .nav__item{
+ position: relative;
+ z-index: 2;
  border: solid 1px var(--primary);
  padding: 0 20px;
  border-radius: 4px;
@@ -92,10 +94,10 @@
  right: 0;
  top: 0;
  z-index:1;
- width: 20vw;
+ width: 0vw;
  height: 100vh;
  background-color: var(--primary);
- opacity: 0;
+ transition: all 0.5s ease-in-out;
 }
 /*------------------------------------------------------*/
 
@@ -135,6 +137,18 @@
 
 .nav__icon:hover i{
   color: var(--primary);
+}
+.nav__icon-active{
+ transform: translateX(-200px);
+}
+
+.sidebar-active{
+ width: 20vw;
+}
+
+.nav__list-active{
+ flex-direction: column;
+ transform:translateX(-100px);
 }
 
 /*------------------------------------------------------*/
