@@ -18,23 +18,46 @@
   <a href="#"><img src="images/DRPDlogo.png" class="nav__logo"/></a>
 
   <div class="nav__box"><input type="text" placeholder="Search" class="nav__search"</input>
-  <i class="fa-solid fa-magnifying-glass"></i></div>
+  <i class="fa-solid fa-magnifying-glass"></i>
+  </div>
 
-  <ul class="nav__list" id="navList">
-    <li class="nav__item" id="navItem1">Your Cart</li>
-    <li class="nav__item" id="navItem2">Your Account</li>
+  <ul class="nav__list nav__list--opacity" >
+    <li class="nav__item nav__item--opacity" >Your Cart<i class="fa-sharp fa-solid fa-cart-shopping fa-xs"></i></li>
+    <li class="nav__item nav__item--opacity" >Your Account</li>
   </ul>
-  <span class="nav__icon" id="navIcon" onclick = "sideBarActive()"; ><i id="navIconBars"class="fa-solid fa-bars"></i></span>
+  <span class="nav__icon"><i class="fa-solid fa-bars"></i></span>
  </div>
 
- <div class="sidebar" id="sideBar">
-
+ <div class="sidebar" >
+   <ul class="nav__list nav__list--sidebar" >
+    <li class="nav__item nav__item--sidebar">Your Cart<i class="fa-sharp fa-solid fa-cart-shopping fa-xs"></i></li>
+    <li class="nav__item nav__item--sidebar" >Your Account</li>
+	<li class="nav__item nav__item--sidebar" >Settings</li>
+	<li class="nav__item nav__item--sidebar" >About</li>
+  </ul>
  </div>
 
 <!------------------------------------------------------>
 
 
 <!--------------------MAIN-BODY------------------------->
+<section class="main">
+   <div class="main__container">
+    <article class="main__article main__article--scale"><img src="assets/amazon1.jpeg" alt="amazon.com"> <h3> What to get from<br>Amazon</h3></article>
+	<article class="main__article main__article--scale"><img src="assets/alibaba1.jpeg" alt="alibaba.com"> <h3>What to get from<br>Alibaba</h3></article>
+	<article class="main__article main__article--scale"><img src="assets/aliexpress1.jpeg" alt="aliexpress.com"> <h3>What to get from<br>AliExpress</h3></article>
+	<article class="main__article main__article--scale"><img src="assets/gs1.jpeg" alt="globalsources.com"> <h3>What to get from<br>Global Sources</h3></article>
+	<article class="main__article main__article--scale"><img src="assets/orbelo1.jpeg" alt="oberlo.com"> <h3>What to get from<br>Oberlo</h3></article>
+   </div>
+   
+   <div class="wrapper">
+    <article class="wrapper__article"></article>
+	<article class="wrapper__article"></article>
+	<article class="wrapper__article"></article>
+	<article class="wrapper__article"></article>
+	<article class="wrapper__article"></article>
+   </div>
+</section>
 
 <!------------------------------------------------------>
 
