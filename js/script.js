@@ -29,3 +29,21 @@ if(navIconBars.classList.contains('fa-bars')){
 }
  
 });
+
+let accountBtn = document.querySelector(".nav__item--account");
+let accountDropDown = document.querySelector(".nav__item--account div");
+
+accountBtn.addEventListener('click', () =>{
+	console.log("works");
+	if(accountDropDown.classList.contains("account-dopdown-active")){
+		accountDropDown.classList.remove("account-dopdown-active");
+		accountBtn.style.borderBottom = "1px solid var(--primary)";
+		accountBtn.style.background = "transparent";
+		
+	}
+	else{
+		accountDropDown.classList.add("account-dopdown-active");
+		accountBtn.style.borderBottom = "0";
+		accountBtn.style.backgroundColor = "rgba(200, 200, 200, 0.5)";
+	}
+});
